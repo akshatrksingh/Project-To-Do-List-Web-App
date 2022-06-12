@@ -2,8 +2,7 @@ from flask import Flask, render_template, request, redirect, url_for
 from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
-#app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///db.sqlite'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://tiqdkylhzfepuk:f8e7dbc4a7640d95eed823aa1f4e74a7163391e12854222f320f8bf3b464d0ca@ec2-34-225-159-178.compute-1.amazonaws.com:5432/ddca3jh9f8mja2'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///db.sqlite'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
